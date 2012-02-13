@@ -1,0 +1,8 @@
+<make>
+makefile
+<include>
+foo.h
+goo.h
+<source>
+source/foo.c
+source/goo.c
