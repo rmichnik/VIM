@@ -2,7 +2,7 @@
 au BufRead,BufNewFile *.cls,*.inc,*.module set filetype=php
 highlight CurrentLine term=reverse ctermbg=0 ctermfg=14 gui=none guibg=#ffffcc
 "se o tipo do arquivo for php, entao leia esse source de cor doida pra ele
-source /Users/renatocarvalho/.vim/colors/darkblue.vim
+source /root/.vim/colors/darkblue.vim
 
 "para quando rolar um :help ele ler o manual do php
 if has("autocmd")
@@ -11,7 +11,7 @@ endif
 
 
 "vamos ler os dicionarios
-helptags /Users/renatocarvalho/.vim/doc
+helptags /root/.vim/doc
 
 set nu
 set cindent
@@ -39,7 +39,7 @@ set wrap
 
 " The completion dictionary is provided by Rasmus:  http://lerdorf.com/funclist.txt
 if has("autocmd")
-	autocmd FileType php  set complete-=k/Users/renatocarvalho/.vim/doc/funclist.txt complete+=k/Users/renatocarvalho/.vim/doc/funclist.txt
+	autocmd FileType php  set complete-=k/root/.vim/doc/funclist.txt complete+=k/root/.vim/doc/funclist.txt
 endif   "has(autocmd)
 
 " Abreviacoes uteis para sua sanidade mental
@@ -78,7 +78,7 @@ nnoremap <silent> <C-b> :CommandTBuffer<CR>
 "autocmd VimEnter * nested NERDTree
 au BufRead,BufNewFile *.tpl,*.html set filetype=smarty
 
-au Filetype smarty exec('set dictionary=/Users/renatocarvalho/.vim/syntax/smarty.vim')
+au Filetype smarty exec('set dictionary=/root/.vim/syntax/smarty.vim')
 au Filetype smarty set complete+=k
 "map <S-Space><S-Space> <C-X><C-K> 
 ":set completeopt=longest,preview
