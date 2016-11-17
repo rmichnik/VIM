@@ -42,6 +42,7 @@ let mapleader = "\<Space>"
 " abrir o .vimrc
 nmap <leader>, :tabedit $MYVIMRC<CR>
 map <leader><F4> :q!<CR>
+map <F4> :bd<CR>
 
 
 " Uteis
@@ -62,7 +63,6 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
-nmap <F3> :CtrlPBuffer<CR>
 nmap <F12> :Tagbar<CR>
 
 " NERDTree"{
@@ -113,6 +113,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'leafgarland/typescript-vim'
 call vundle#end()            " required
 filetype plugin indent on    " required"}
 
@@ -130,3 +132,11 @@ let g:SuperTabCrMapping=1
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
+
+
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
